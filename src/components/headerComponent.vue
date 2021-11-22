@@ -1,7 +1,9 @@
 <template>
   <div>
     <header>
-      <img src="" alt="" />
+      <div id="logoImg">
+        <img src="" alt="" />
+      </div>
 
       <a href="#" id="sobrenós"> Sobre nós </a>
 
@@ -27,18 +29,30 @@ export default {
 
 
 
+
+
 <style scoped>
+header {
+  position: fixed;
+  width: 1345px;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background-color: white;
+}
+
 #sobrenós {
   position: absolute;
   width: 103px;
   height: 31px;
   left: 35px;
   top: 39px;
+  text-decoration: none;
 
-  font-family: Sarabun;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
 
   color: #000000;
@@ -51,13 +65,13 @@ export default {
   left: 223px;
   top: 39px;
 
-  font-family: Sarabun;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
 
   color: #000000;
+  text-decoration: none;
 }
 #contato {
   position: absolute;
@@ -66,22 +80,12 @@ export default {
   left: 507px;
   top: 39px;
 
-  font-family: Sarabun;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 31px;
 
   color: #000000;
-}
-
-header {
-  position: absolute;
-  width: 1260px;
-  height: 109px;
-  left: 0px;
-  top: 0px;
-
-  background: #ffffff;
+  text-decoration: none;
 }
 </style>

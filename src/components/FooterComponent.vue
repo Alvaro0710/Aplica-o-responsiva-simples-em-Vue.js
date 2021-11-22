@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer">
+  <footer>
     <h1 id="email">email:email@gmail.com</h1>
     <h1 id="contato">contato: (77)123456789</h1>
     <h1 id="instagram">instagra: @nome_da_empresa</h1>
@@ -14,17 +14,15 @@ export default {
 </script>
 
 <style scoped>
-#footer {
+footer {
   background-color: black;
-  position: relative;
-  width: 1268px;
+
+  width: 1345px;
   height: 204px;
-  left: -5px;
-  top: 820px;
 }
 
 #email {
-  width: 264px;
+  width: 200px;
   height: 28px;
   left: 75px;
   top: 895px;
@@ -50,7 +48,6 @@ export default {
 }
 
 #instagram {
-  position: unset;
   width: 344px;
   height: 28px;
   right: 100px;
