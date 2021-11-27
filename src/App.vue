@@ -21,13 +21,13 @@ export default {
 </script>
 
 <style>
-body {
+* {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -38,14 +38,12 @@ body {
 
 #nav {
   padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+  z-index: 10000;
 }
 
 #nav a.router-link-exact-active {
-  color: #42b983;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
 }
 </style>

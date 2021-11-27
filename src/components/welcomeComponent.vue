@@ -1,5 +1,9 @@
 <template>
-  <div id="main"></div>
+  <div id="main">
+    <img src="../assets/estrela.jpg" id="star" alt="" />
+    <img src="../assets/lua.png" id="lua" alt="" />
+    <img src="../assets/montanha.png" id="montanha" alt="" />
+  </div>
 </template>
 
 <script>
@@ -10,20 +14,34 @@ export default {
 
 <style scoped>
 #main {
-  background-image: url("https://setting.com.br/wp-content/uploads/2020/07/como-estruturar-setor-financeiro-empresa-1280x720.jpg");
-  width: 100vw;
-  height: 530px;
-
-  top: 0px;
-  mix-blend-mode: normal;
-  background-size: 100% 572px;
-}
-#text {
-  background-color: black;
   position: relative;
-  width: 40%;
-  height: 158px;
-
-  top: 300px;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+}
+#main img {
+  position: absolute;
+}
+#star {
+  bottom: 40px;
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+  z-index: 9;
+  left: 0;
+}
+#lua {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  z-index: 10;
+  left: 368px;
+  top: 10px;
+}
+#montanha {
+  position: absolute;
+  width: 100%;
+  z-index: 11;
+  left: 0;
 }
 </style>

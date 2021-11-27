@@ -1,15 +1,19 @@
 <template>
   <div id="main">
     <header>
-      <div id="logoImg">
-        <img src="" alt="" />
-      </div>
+      <a href="#" id="logo">logo</a>
 
-      <router-link to="/about" id="sobrenós">sobre nós</router-link>
-
-      <router-link to="/" id="trabalhos">trabalhos</router-link>
-
-      <a href="#" id="contato"> Contato </a>
+      <ul>
+        <li>
+          <router-link to="/about">Sobre nós</router-link>
+        </li>
+        <li>
+          <router-link to="/" id="trabalhos">Trabalhos</router-link>
+        </li>
+        <li>
+          <a href="#" id="contato"> Contato </a>
+        </li>
+      </ul>
     </header>
   </div>
 </template>
@@ -27,63 +31,60 @@ export default {
 
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
+}
+
 main {
   width: 100%;
   max-width: 720px;
   margin: 0, auto;
 }
 header {
-  position: fixed;
-  width: 100%;
-  height: 50px;
+  position: absolute;
+  top: 0;
   left: 0px;
-  top: 0px;
-
-  background-color: white;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
-#sobrenós {
-  position: absolute;
-  width: 103px;
-  height: 31px;
-  left: 35px;
-
-  text-decoration: none;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 31px;
-
-  color: #000000;
-}
-
-#trabalhos {
-  position: absolute;
-  width: 199px;
-  height: 31px;
-  left: 223px;
-
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 31px;
-
-  color: #000000;
+header #logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   text-decoration: none;
 }
-#contato {
-  position: absolute;
-  width: 84px;
-  height: 31px;
-  left: 507px;
 
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 31px;
-
-  color: #000000;
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  padding: 6px 15px;
   text-decoration: none;
+  margin: 20px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+header ul li a:hover {
+  background: white;
+  color: black;
+  border-radius: 30;
+  border-radius: 20px;
 }
 </style>
