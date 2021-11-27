@@ -17,7 +17,7 @@ export default {
 footer {
   background-color: black;
 
-  width: 1345px;
+  width: 100%;
   height: 204px;
 }
 

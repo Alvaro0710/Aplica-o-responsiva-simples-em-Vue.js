@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div id="main">
     <header>
       <div id="logoImg">
         <img src="" alt="" />
       </div>
 
-      <a href="#" id="sobrenós"> Sobre nós </a>
+      <router-link to="/about" id="sobrenós">sobre nós</router-link>
 
-      <a href="#" id="trabalhos"> trabalhos recentes </a>
+      <router-link to="/" id="trabalhos">trabalhos</router-link>
 
       <a href="#" id="contato"> Contato </a>
     </header>
@@ -26,16 +26,16 @@ export default {
 </script>
 
 
-
-
-
-
-
 <style scoped>
+main {
+  width: 100%;
+  max-width: 720px;
+  margin: 0, auto;
+}
 header {
   position: fixed;
-  width: 1345px;
-  height: 100px;
+  width: 100%;
+  height: 50px;
   left: 0px;
   top: 0px;
 
@@ -47,7 +47,7 @@ header {
   width: 103px;
   height: 31px;
   left: 35px;
-  top: 39px;
+
   text-decoration: none;
 
   font-style: normal;
@@ -63,7 +63,6 @@ header {
   width: 199px;
   height: 31px;
   left: 223px;
-  top: 39px;
 
   font-style: normal;
   font-weight: normal;
@@ -78,7 +77,6 @@ header {
   width: 84px;
   height: 31px;
   left: 507px;
-  top: 39px;
 
   font-style: normal;
   font-weight: normal;

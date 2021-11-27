@@ -1,5 +1,15 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <welcome-component />
+    <seta-component />
   </div>
 </template>
+
+<script>
+import SetaComponent from "../components/setaComponent.vue";
+import welcomeComponent from "../components/welcomeComponent.vue";
+
+export default {
+  components: { welcomeComponent, SetaComponent },
+};
+</script>
