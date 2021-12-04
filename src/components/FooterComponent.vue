@@ -15,63 +15,21 @@ export default {
 
 <style scoped>
 footer {
-  background-color: black;
-
+  position: absolute;
+  background-color: white;
+  padding: 50px;
+  padding-top: 10px;
   width: 100%;
   height: 204px;
+  display: flexbox;
+  columns: 2;
+  justify-content: center;
 }
 
-#email {
-  width: 200px;
-  height: 28px;
-  left: 75px;
-  top: 895px;
-  color: white;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-#contato {
-  width: 259px;
-  height: 28px;
-  left: 80px;
-  top: 950px;
-  color: white;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-#instagram {
-  width: 344px;
-  height: 28px;
-  right: 100px;
-  left: 468px;
-  color: rgb(238, 238, 238);
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-#end {
-  width: 361px;
-  height: 28px;
-  left: 468px;
-  top: 944px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-
-  color: #ffffff;
+footer h1 {
+  position: relative;
+  color: #002b33;
+  padding: 15px;
+  font-size: 30px;
 }
 </style>
