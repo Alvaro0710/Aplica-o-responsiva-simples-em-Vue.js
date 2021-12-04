@@ -1,7 +1,7 @@
 <template>
   <div id="main">
     <header>
-      <a href="#" id="logo">logo</a>
+      <a href="/" id="logo">logo</a>
 
       <ul>
         <li>
@@ -44,7 +44,7 @@ main {
   margin: 0, auto;
 }
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0px;
   width: 100%;
