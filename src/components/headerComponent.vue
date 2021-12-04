@@ -5,10 +5,10 @@
 
       <ul>
         <li>
-          <router-link to="/about">Sobre nós</router-link>
+          <router-link to="/">Sobre nós</router-link>
         </li>
         <li>
-          <router-link to="/" id="trabalhos">Trabalhos</router-link>
+          <router-link to="/works" id="trabalhos">Trabalhos</router-link>
         </li>
         <li>
           <a href="#" id="contato"> Contato </a>

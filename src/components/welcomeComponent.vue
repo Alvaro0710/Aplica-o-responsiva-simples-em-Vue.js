@@ -4,7 +4,7 @@
     <img src="../assets/lua.png" id="lua" alt="" />
     <img src="../assets/montanha.png" id="montanha" alt="" />
     <h2 id="text">Montanha</h2>
-    <a href="" id="btn">Explore</a>
+    <a href="#" id="btn">Explore</a>
   </div>
 </template>
 
