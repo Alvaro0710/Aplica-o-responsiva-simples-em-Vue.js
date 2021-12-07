@@ -38,13 +38,8 @@ export default {
   font-family: "popins", sans-serif;
 }
 
-main {
-  width: 100%;
-  max-width: 720px;
-  margin: 0, auto;
-}
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0px;
   width: 100%;
@@ -86,5 +81,11 @@ header ul li a:hover {
   color: black;
   border-radius: 30;
   border-radius: 20px;
+}
+
+@media (max-width: 562px) {
+  header {
+    display: none;
+  }
 }
 </style>

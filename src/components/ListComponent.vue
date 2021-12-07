@@ -23,7 +23,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, expedita
         commodi ea, nihil dicta quibusdam similique consequuntur consequatur
         eligendi, excepturi tempora delectus eum consectetur libero repudiandae
-        iste sed suscipit corrupti.
+        iste sed suscipit corrupti. lorem
       </article>
     </div>
 
@@ -51,6 +51,7 @@ export default {
 
 <style scoped>
 #component-works {
+  position: static;
   display: flex;
   columns: 3;
   margin: 30px;
@@ -58,28 +59,31 @@ export default {
 }
 
 .item {
-  width: 30%;
-  height: 400px;
-  padding: 20px;
-  margin: 0px;
   position: relative;
+  width: 30%;
+  padding: 20px;
+  margin: 30px 10px;
+  background-color: white;
+  border-radius: 10px;
 }
 .item img {
-  width: 100%;
+  width: 90%;
   height: 200px;
-  margin: 20px;
   margin: 10px;
 }
 
 .item h1,
 article {
-  color: white;
+  color: black;
 }
 .item h1 {
   font-size: 30px;
 }
 
-.item article {
-  position: absolute;
+@media (max-width: 562px) {
+  .item {
+    width: 90%;
+    padding: 5px;
+  }
 }
 </style>

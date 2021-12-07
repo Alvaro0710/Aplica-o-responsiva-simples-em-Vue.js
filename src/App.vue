@@ -3,6 +3,7 @@
     <header-component id="nav" />
 
     <router-view />
+
     <footer-component />
   </div>
 </template>

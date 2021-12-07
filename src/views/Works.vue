@@ -18,12 +18,12 @@ import list from "../components/ListComponent.vue";
 </script>
 
 <style scoped>
-.content {
-  margin: 30px;
-}
 h1 {
   color: white;
 
   font-size: 40px;
+}
+list {
+  margin: 20px;
 }
 </style>
