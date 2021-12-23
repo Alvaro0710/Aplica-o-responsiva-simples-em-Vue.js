@@ -3,8 +3,9 @@
     <img src="../assets/estrela.jpg" id="star" alt="" />
     <img src="../assets/lua.png" id="lua" alt="" />
     <img src="../assets/montanha.png" id="montanha" alt="" />
+
     <h2 id="text">Montanha</h2>
-    <a href="#" id="btn">Explore</a>
+    <a href="#loren">explore</a>
   </div>
 </template>
 
@@ -16,18 +17,20 @@ export default {
 
 <style scoped>
 #main {
+  display: block;
   position: relative;
   width: 100%;
   height: 100vh;
   padding: 100px;
 }
-#main img {
+
+#star {
   position: absolute;
 }
 #star {
   bottom: 40px;
   width: 100%;
-  height: 100vw;
+
   object-fit: cover;
   z-index: 9;
   left: 0;
@@ -56,14 +59,51 @@ export default {
   white-space: nowrap;
   font-size: 7.5vw;
 }
-#btn {
+#main a {
   position: relative;
-  color: black;
   background-color: white;
-  padding: 8px 60px;
-  z-index: 13;
+  padding: 15px;
+  border-radius: 20px;
   text-decoration: none;
-  top: 150px;
-  border-radius: 30px;
+  top: 100px;
+  color: #002b33;
+  z-index: 1000;
+}
+
+@media (max-width: 562px) {
+  #main {
+    position: relative;
+    z-index: 12;
+    height: 100vw;
+    padding: 20px;
+    bottom: 20px;
+  }
+  #main #montanha {
+    width: 100%;
+    height: 500px;
+    z-index: 10;
+
+    top: 10px;
+  }
+  #main #star {
+    height: 100vh;
+  }
+  #lua {
+    position: absolute;
+    width: 90%;
+    height: 90vw;
+    z-index: 10;
+    right: 100%;
+    left: 30px;
+
+    top: 10px;
+  }
+  #text {
+    top: 90px;
+    left: 0px;
+  }
+  #btn {
+    top: 200px;
+  }
 }
 </style>

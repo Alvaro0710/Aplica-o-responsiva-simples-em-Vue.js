@@ -88,13 +88,14 @@ export default {
 
 <style scoped>
 #loren {
-  padding: 100px;
+  padding: 100px 20px;
 }
 
 #loren p,
 h2 {
   padding: 10px;
   color: white;
+  margin-top: 20px;
 }
 
 #somos p {
@@ -102,5 +103,11 @@ h2 {
   columns: 2;
   color: white;
   padding: 30px;
+}
+
+@media (max-width: 562px) {
+  #somos p {
+    columns: 1;
+  }
 }
 </style>

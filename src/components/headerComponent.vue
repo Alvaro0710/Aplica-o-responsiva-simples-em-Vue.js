@@ -11,7 +11,7 @@
           <router-link to="/works" id="trabalhos">Trabalhos</router-link>
         </li>
         <li>
-          <a href="#" id="contato"> Contato </a>
+          <router-link to="/contato"> Contato </router-link>
         </li>
       </ul>
     </header>
@@ -39,7 +39,7 @@ export default {
 }
 
 header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0px;
   width: 100%;
@@ -48,6 +48,9 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+}
+header button {
+  display: none;
 }
 
 header #logo {
@@ -70,6 +73,7 @@ header ul li {
   text-decoration: none;
   margin: 20px;
 }
+
 a {
   color: white;
   text-decoration: none;
@@ -83,9 +87,26 @@ header ul li a:hover {
   border-radius: 20px;
 }
 
+menu {
+  position: absolute;
+  background-color: white;
+  height: 100vh;
+  z-index: 1000;
+}
+
 @media (max-width: 562px) {
   header {
     display: none;
+  }
+  #main {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  button {
+    display: none;
+    background-color: white;
+    width: 100%;
   }
 }
 </style>
