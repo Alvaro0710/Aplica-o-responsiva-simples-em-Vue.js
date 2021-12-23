@@ -15,6 +15,14 @@
         </li>
       </ul>
     </header>
+    <menu>
+      <button>fechar</button>
+      <ul>
+        <li>home</li>
+        <li>contato</li>
+        <li>trabalhos</li>
+      </ul>
+    </menu>
   </div>
 </template>
 
@@ -88,10 +96,14 @@ header ul li a:hover {
 }
 
 menu {
+  display: none;
   position: absolute;
   background-color: white;
   height: 100vh;
+  width: 100%;
   z-index: 1000;
+  right: 0;
+  top: 0;
 }
 
 @media (max-width: 562px) {
@@ -100,7 +112,7 @@ menu {
   }
   #main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   button {

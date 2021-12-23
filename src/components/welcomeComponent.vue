@@ -5,7 +5,7 @@
     <img src="../assets/montanha.png" id="montanha" alt="" />
 
     <h2 id="text">Montanha</h2>
-    <a href="#loren">explore</a>
+    <a href="#loren">Explore</a>
   </div>
 </template>
 
