@@ -8,7 +8,7 @@
 
     <h1 v-for="membro of equipe" :key="membro.id"></h1>
 
-    <list endereço="http://localhost:3000/contatos" />
+    <list endereço="http://localhost:3000/equipe" />
   </div>
 </template>
 
