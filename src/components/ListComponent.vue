@@ -1,3 +1,16 @@
+<!--  
+
+  Este component faz uma busca 
+  em uma API HTTP com o Axios
+  importado na instancia api
+  no serviço  axios e renderiza 
+  os itens no componente.
+      
+  O endereço da API é passado via
+  props com o nome endereço.
+-->
+
+
 <template>
   <div id="component-list">
     <div class="item" v-for="item of listas" :key="item.id">
@@ -11,11 +24,20 @@
   </div>
 </template>
 
+
+
+
+
+
 <script>
-import api from "../services/axios";
+import api from "../services/axios"; //importa o axios já configurado na pasta services
 
 export default {
-  name: "list",
+  name: "list", //nomeia o componente como list
+
+  props: {
+    endereço: String, //recebe a props com o endereço da api e passa para a instancia api do axios
+  },
 
   data() {
     return {
@@ -24,8 +46,8 @@ export default {
   },
 
   mounted() {
-    api.listar("projetos").then((resp) => {
-      //vai uma prop como parametro de listar para onde irá selecionar a rota da api
+    api.listar(this.endereço).then((resp) => {
+      //this.endereço é a prop no parametro de listar para onde irá selecionar a rota da api
       var lista = resp.data;
       this.listas = lista;
       console.log(this.listas);
@@ -33,6 +55,11 @@ export default {
   },
 };
 </script>
+
+
+
+
+
 
 <style scoped>
 #component-list {

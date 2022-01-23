@@ -1,10 +1,14 @@
 <template>
   <div class="content">
     <h1>Conheça nossos trabalhos</h1>
-    <list />
+
+    <list endereço="http://localhost:3000/projetos" />
+
     <h1>Conheça nossa equipe</h1>
+
     <h1 v-for="membro of equipe" :key="membro.id"></h1>
-    <list />
+
+    <list endereço="http://localhost:3000/contatos" />
   </div>
 </template>
 
