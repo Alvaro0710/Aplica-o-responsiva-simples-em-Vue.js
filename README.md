@@ -1,4 +1,4 @@
-# Aplica-o-responsiva-simples-em-Vue.js
+# Aplicação-responsiva-simples-em-Vue.js
 
 ### Este projeto está em construção
 
