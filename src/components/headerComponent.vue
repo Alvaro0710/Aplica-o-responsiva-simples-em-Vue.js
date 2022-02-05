@@ -1,3 +1,6 @@
+<!-- Compnente responsavel por rendereizar o header da página-->
+
+
 <template>
   <div id="main">
     <header>

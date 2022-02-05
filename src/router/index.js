@@ -1,3 +1,5 @@
+//Arquivo responsavel por gerenciar as rotas da aplicação
+
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Works from '../views/Works.vue'

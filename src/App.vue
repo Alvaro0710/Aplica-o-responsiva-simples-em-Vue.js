@@ -1,3 +1,5 @@
+<!-- Arquivo principal do vue -->
+
 <template>
   <div id="app">
     <header-component id="nav" />
@@ -15,9 +17,7 @@ import headerComponent from "./components/headerComponent.vue";
 export default {
   components: { headerComponent, FooterComponent },
   name: "app",
-  compnents: {
-    headerComponent,
-  },
+  
 };
 </script>
 

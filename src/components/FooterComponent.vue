@@ -1,3 +1,5 @@
+<!--componente responsavel por renderizar o footer da página-->
+
 <template>
   <footer>
     <h1>Empresa</h1>

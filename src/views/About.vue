@@ -1,3 +1,6 @@
+<!-- Esta página é responsavel por renderizar a pagina principal
+do site e o component de boas vindas -->
+
 <template>
   <div class="about">
     <welcome-component />

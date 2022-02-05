@@ -1,3 +1,5 @@
+<!-- Este componente renderiza uma imágem de boas vindas-->
+
 <template>
   <div id="main">
     <img src="../assets/estrela.jpg" id="star" alt="" />

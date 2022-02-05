@@ -1,3 +1,8 @@
+<!-- Esta view será responsavel por mostrar a 
+a localização da empresa e renderizar um formulário
+para contato, !OBS: FORMULÁRIO AINDA NÃO FUNCIONAL-->
+
+
 <template>
   <div>
     <h1>Onde nos encontrar</h1>
@@ -12,6 +17,8 @@
           loading="lazy"
         ></iframe>
       </div>
+
+      
       <div id="form">
         <h2>Fale conosco</h2>
         <input type="text" placeholder="nome" />

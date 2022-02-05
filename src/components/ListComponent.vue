@@ -29,6 +29,7 @@
 <script>
 import api from "../services/axios"; //importa o axios já configurado na pasta services
 
+
 export default {
   name: "list", //nomeia o componente como list
 
@@ -43,13 +44,29 @@ export default {
   },
 
   mounted() {
+    
+    
     api.listar(this.endereço).then((resp) => {
       //this.endereço é a prop no parametro de listar para onde irá selecionar a rota da api
+      console.log(resp.data)
       var lista = resp.data;
       this.listas = lista;
       console.log(this.listas);
+      
+    }).catch(()=>{
+      var lista = [{
+
+        id:"1",
+        nome:"NENHUM ITEM ENCONTRADO",
+        img: "https://cdn-icons-png.flaticon.com/512/179/179386.png",
+        descrição: "POR FAVOR SE CONECTE A UMA API"
+    }]
+      
+      this.listas = lista;
     });
-  },
+
+    
+  }
 };
 </script>
 
