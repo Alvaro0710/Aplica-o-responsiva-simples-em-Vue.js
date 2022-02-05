@@ -1,15 +1,18 @@
 # Aplica-o-responsiva-simples-em-Vue.js
 
+### Este projeto está em construção
+
 
 # Indice
 
-* [Sobre](#Sobre)
+* Sobre
 
-* [Pre-requisitos](Pre-requisitos)
+* Tecnologias utilizadas
 
-* [Tecnologias](Tecnologias)
+* Pre-requisitos para instalação
 
-* [Instalação](Instalação)
+
+* Instalação
 
 # Sobre
 
@@ -71,7 +74,6 @@ $ npm run serve
 
 ```
 
-4º Fazer as alterações nos paragrafos (Por ser uma aplicação demonstrativa todo o conteúdo da página foi gerado em Lorem-Ipson sendo necessário a alteração do conteúdo para os devidos fins.)
+4º Fazer as alterações nos paragrafos (Por ser uma aplicação demonstrativa todo o conteúdo da página foi gerado em Lorem-Ipson sendo necessário a alteração do conteúdo para os devidos fins)
 
-
-
+Made with Álvaro Damásio (alvarod918@gmail.com)
