@@ -38,18 +38,21 @@ Para a instalação do projeto deve ter instalado:
 
 # Instalação
 
+
 1º Fazer um git clone do projeto na pasta do projeto
+
+Dentro da pasta do seu projeto abra um terminal e digite:
 
 ``` bash
 
-$ git clone https://github.com/Alvaro0710/Aplica-o-responsiva-simples-em-Vue.js.git
+git clone https://github.com/Alvaro0710/Aplica-o-responsiva-simples-em-Vue.js.git
 
 ``` 
 2º Entrar no projeto
 
 ``` bash
 
-$ cd app
+cd Aplica-o-responsiva-simples-em-Vue.js
 
 ```
 
@@ -57,7 +60,7 @@ $ cd app
 
 ``` bash
 
-$ npm install
+npm install
 
 ```
 
@@ -70,10 +73,10 @@ dentro da pasta do projeto entre em /src/views/Works.vue e na linha 9 e 15 alter
 
 ```bash
 
-$ npm run serve
+npm run serve
 
 ```
 
 4º Fazer as alterações nos paragrafos (Por ser uma aplicação demonstrativa todo o conteúdo da página foi gerado em Lorem-Ipson sendo necessário a alteração do conteúdo para os devidos fins)
 
-Made with Álvaro Damásio (alvarod918@gmail.com)
+Made by Álvaro Damásio (alvarod918@gmail.com)
