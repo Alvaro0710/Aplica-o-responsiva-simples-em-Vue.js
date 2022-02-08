@@ -1,7 +1,10 @@
 # Aplicação-responsiva-simples-em-Vue.js
 
-### Este projeto está em construção
 
+
+![Captura de Tela (8)](https://user-images.githubusercontent.com/77339858/153053710-3644f133-23da-435f-b114-b18eb5214f8b.png)
+
+### Este projeto está em construção
 
 # Indice
 
